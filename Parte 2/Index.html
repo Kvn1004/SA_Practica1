@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Practica 1 - Conceptos básicos de SOA
+    </title>
+    <!--Referencia al script que contiene las funciones de javascript para conectarse a la API-->
+    <script src="js/scripts.js"></script>
+    <!--libreria Ajax para realizar la conexion asincrona con la API-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--Tabla donde se organizan las funciones de mostrar contactos y crear contacto-->
+    <table style="height:90%; width:80%; border:4px solid black; margin-left:auto; margin-right:auto; text-align:center">
+        <tr>
+            <td>Listar contactos</td>
+            <td>Crear contactos</td>
+        </tr>
+        <tr>
+            <td><button id="btnListar" onclick="listaUsuarios()">Listar</button></td>
+            <td>
+                Nombre<br>
+                <input type="text" id="nombre" class="input"><br>
+                <button id="btn" onclick="crearUsuario()">Aceptar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="tablaUsuarios">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
